@@ -18,5 +18,5 @@ test('Check for multiple checks', () => {
   validator.addCheck(v => v < 4);
   validator.addCheck(v => v < 3);
   expect(validator.isValid(2)).toBe(true);
-  expect(validator.isValid(0)).toBe(true);
+  expect(validator.isValid(false)).toBe(false);
 });
